@@ -1,0 +1,24 @@
+[package]
+name = "luxcoin"
+version = "0.1.0"
+authors = ["Justin Cremer <jacremer@live.com>"]
+edition = "2021"
+
+[lib]
+name = "lib_luxcoin"
+path = "src/lib.rs"
+
+[[bin]]
+name = "luxcoin"
+path = "src/bin/main.rs"
+
+
+[dependencies]
+hex = "0.4.3"
+serde = { version = "1.0.130", features = ["derive"] }
+serde_bytes = "0.11.5"
+serde_json = "1.0.69"
+sha2 = "0.9.8"
+structopt = "0.3.25"
+thiserror = "1.0.30"
+
