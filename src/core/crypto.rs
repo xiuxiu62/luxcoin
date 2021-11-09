@@ -10,7 +10,7 @@ use sha2::Digest;
 pub struct Sha256([u8; 32]);
 
 impl Sha256 {
-    pub fn new(bytes: [u8; 32]) -> Self {
+    pub const fn new(bytes: [u8; 32]) -> Self {
         Self(bytes)
     }
 }
